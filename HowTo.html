@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=9" >
+
+<title>How to Use Git &amp; GitHub</title>
+
+<style type="text/css">
+body, td {
+   font-family: sans-serif;
+   background-color: white;
+   font-size: 12px;
+   margin: 8px;
+}
+
+tt, code, pre {
+   font-family: 'DejaVu Sans Mono', 'Droid Sans Mono', 'Lucida Console', Consolas, Monaco, monospace;
+}
+
+h1 { 
+   font-size:2.2em; 
+}
+
+h2 { 
+   font-size:1.8em; 
+}
+
+h3 { 
+   font-size:1.4em; 
+}
+
+h4 { 
+   font-size:1.0em; 
+}
+
+h5 { 
+   font-size:0.9em; 
+}
+
+h6 { 
+   font-size:0.8em; 
+}
+
+a:visited {
+   color: rgb(50%, 0%, 50%);
+}
+
+pre {	
+   margin-top: 0;
+   max-width: 95%;
+   border: 1px solid #ccc;
+   white-space: pre-wrap;
+}
+
+pre code {
+   display: block; padding: 0.5em;
+}
+
+code.r, code.cpp {
+   background-color: #F8F8F8;
+}
+
+table, td, th {
+  border: none;
+}
+
+blockquote {
+   color:#666666;
+   margin:0;
+   padding-left: 1em;
+   border-left: 0.5em #EEE solid;
+}
+
+hr {
+   height: 0px;
+   border-bottom: none;
+   border-top-width: thin;
+   border-top-style: dotted;
+   border-top-color: #999999;
+}
+
+@media print {
+   * { 
+      background: transparent !important; 
+      color: black !important; 
+      filter:none !important; 
+      -ms-filter: none !important; 
+   }
+
+   body { 
+      font-size:12pt; 
+      max-width:100%; 
+   }
+       
+   a, a:visited { 
+      text-decoration: underline; 
+   }
+
+   hr { 
+      visibility: hidden;
+      page-break-before: always;
+   }
+
+   pre, blockquote { 
+      padding-right: 1em; 
+      page-break-inside: avoid; 
+   }
+
+   tr, img { 
+      page-break-inside: avoid; 
+   }
+
+   img { 
+      max-width: 100% !important; 
+   }
+
+   @page :left { 
+      margin: 15mm 20mm 15mm 10mm; 
+   }
+     
+   @page :right { 
+      margin: 15mm 10mm 15mm 20mm; 
+   }
+
+   p, h2, h3 { 
+      orphans: 3; widows: 3; 
+   }
+
+   h2, h3 { 
+      page-break-after: avoid; 
+   }
+}
+
+</style>
+
+
+
+
+
+</head>
+
+<body>
+<h1>How to Use Git &amp; GitHub</h1>
+
+<h2>1. Create New Repo in GitHub </h2>
+
+<ul>
+<li><em>please include a readme.md file (check this box first before doing the rest)</em></li>
+</ul>
+
+<h2>2. Clone Repo to Desktop</h2>
+
+<ul>
+<li>$ cd ~/Desktop/  -&gt; changes working directory to the desktop</li>
+<li>$ git clone (insert web link to GitHub folder) -&gt; clones repo in GitHub to desktop<br/>
+<em>note: you may have to type in username and password here</em><br/></li>
+<li>$ cd (insert repo name, i.e. name of folder) -&gt; changes working directory to the cloned repo<br/></li>
+<li>$ ls -&gt; lists the files in the repo<br/></li>
+<li>$ git remote -v -&gt; references to repos not on my computer<br/></li>
+<li><em>There should be an origin remote; it&#39;s created automatically with the cloning process. If no origin is available, then complete the following step.</em><br/></li>
+<li>If there is no origin listed, then $ git remote add origin (insert web link to repo folder)</li>
+</ul>
+
+<h2>3. Edit Files in Cloned Repo</h2>
+
+<ul>
+<li>$ ls<br/></li>
+<li>Open file in appropriate program from desktop to edit, edit, save file.<br/></li>
+<li>$ git status<br/></li>
+</ul>
+
+<h2>4. Add a New File in Cloned Repo</h2>
+
+<ul>
+<li>$ touch (name of file.ext)<br/></li>
+<li>$ ls<br/></li>
+<li>Open file in appropriate program to edit, edit, save file.<br/></li>
+<li>$ git status<br/></li>
+</ul>
+
+<h2>5. Stage Files for Commit</h2>
+
+<ul>
+<li>$ git add (insert specific file name)<br/></li>
+<li>$ git add .  -&gt; adds all new files in working directory </li>
+<li>$ git status</li>
+</ul>
+
+<h2>6. Commit Changes </h2>
+
+<ul>
+<li>$ git commit -m &ldquo;insert description of commit&rdquo;<br/></li>
+<li>$ git status  -&gt; confirm there is nothing else to commit<br/></li>
+<li>$ git log  -&gt; confirm the commit is present</li>
+<li><em>This affects local repo only; you still need to push changes the GitHub repo.</em><br/></li>
+</ul>
+
+<h2>7. Push Changes to GitHub Repo</h2>
+
+<ul>
+<li>$ git push origin master  -&gt; push master branch to origin remote (GitHub Repo)<br/></li>
+<li><em>note: you may need to add username and password</em><br/></li>
+<li>Refresh GitHub to confirm new files were pushed<br/></li>
+</ul>
+
+<p>Kevin Markham is rockstar; there are no words to express my gratitude for the videos he has created.  The content above is a summary of some of his youtube videos that I found particularly useful.  This was created for easy reference in the event I don&#39;t have access to youtube.com.  Please see his amazing videos <a href="https://www.youtube.com/user/dataschool">here.</a>  Thank you!</p>
+
+</body>
+
+</html>
+
